@@ -7,8 +7,6 @@
 
 This repository contains an AI-powered ticket management system designed to automate and streamline the process of resolving support tickets. It leverages the power of AI to efficiently handle ticket categorization, prioritization, and assignment, enhancing overall support efficiency.
 
-> **Project Status:** [Specify the current status of the project: e.g., actively maintained, under development, proof of concept, etc.]
-
 ## Key Features
 
 - **AI-Powered Ticket Processing:**
@@ -74,13 +72,13 @@ bash
     MAILTRAP_SMTP_PASS=your_mailtrap_password
     GEMINI_API_KEY=your_gemini_api_key
     APP_URL=http://localhost:your_frontend_port
-        (Ensure you replace placeholders with your actual credentials.)
 
 4.  **Run the Application:**
 
     Start the backend server:
 
     bash
+    npm run dev
     npm run inngest-dev
     1.  Access the application through your web browser at the specified `APP_URL`.
 2.  Register a new user or log in with existing credentials.
@@ -90,7 +88,6 @@ bash
 
 ## API Endpoints
 
-(Assuming standard RESTful API conventions based on similar systems)
 
 Authentication:
 
@@ -99,29 +96,16 @@ Authentication:
 
 Tickets:
 
-- `POST /api/tickets`: Create a new ticket.
-- `GET /api/tickets`: Get all tickets for the logged-in user.
-- `GET /api/tickets/:id`: Get details for a specific ticket.
+- `POST /api/tickets/create-ticket`: Create a new ticket.
+- `GET /api/tickets/get-tickets`: Get all tickets for the logged-in user.
+- `GET /api/tickets/get-ticket/:id`: Get details for a specific ticket.
 
 Admin (Admin Only):
 
 - `GET /api/auth/users`: Get a list of all users.
 - `POST /api/auth/update-user`: Update user roles and skills.
 
-> **Note:** Add more details for each endpoint, including request/response examples and expected data formats.
 
-## Contributing
-
-> **Guidelines for how others can contribute to the project.**
-
-1.  Fork the repository.
-2.  Create a new branch (`git checkout -b feature/your-feature`).
-3.  Make your changes.
-4.  Commit your changes (`git commit -am 'Add some feature'`).
-5.  Push to the branch (`git push origin feature/your-feature`).
-6.  Create a new Pull Request.
-
-> **Code of Conduct:** [Link to Code of Conduct]
 
 ## Troubleshooting
 
@@ -140,9 +124,6 @@ Email Issues:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact Information
-
-> **Your Name/Organization** - [Your Email] - [Project Website (if applicable)]
 
 ## Acknowledgments
 
@@ -154,4 +135,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Feel free to explore, contribute, and adapt this AI Ticket Agent to your needs!
 
-> **Future Enhancements:** [List any planned future enhancements or features.]
+> **Future Enhancements: Work on improving the security and on the working of frontend
