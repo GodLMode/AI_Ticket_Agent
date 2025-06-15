@@ -56,14 +56,15 @@ The AI Ticket Agent operates through a streamlined process:
 
 1.  **Clone the Repository:**
 
-bash
+```bash
     git clone https://github.com/GodLMode/AI_Ticket_Agent.git
     cd AI_Ticket_Agent
-    2.  **Install Dependencies:** Navigate into both `ai-ticket-assistant` and `ai-ticket-frontend` directories and install their respective dependencies:
+```
+  2.  **Install Dependencies:** Navigate into both `ai-ticket-assistant` and `ai-ticket-frontend` directories and install their respective dependencies:
 
-    3.  **Environment Variables:** Create a `.env` file in the `ai-ticket-assistant` directory and configure the following:
+  3.  **Environment Variables:** Create a `.env` file in the `ai-ticket-assistant` directory and configure the following:
 
-
+```bash
     MONGO_URI=your_mongodb_uri
     JWT_SECRET=your_jwt_secret
     MAILTRAP_SMTP_HOST=your_mailtrap_host
@@ -72,6 +73,7 @@ bash
     MAILTRAP_SMTP_PASS=your_mailtrap_password
     GEMINI_API_KEY=your_gemini_api_key
     APP_URL=http://localhost:your_frontend_port
+```
 
 4.  **Run the Application:**
 
